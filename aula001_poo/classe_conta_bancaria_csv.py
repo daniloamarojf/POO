@@ -38,7 +38,7 @@ while True:
         break
 
 # Caminho para a pasta onde o arquivo csv será salvo
-pasta = 'arquivo_csv/conta/'
+pasta = 'arquivos_csv/conta/'
 
 # Verificando se a pasta existe, se não, será criada
 os.makedirs(pasta, exist_ok=True)
