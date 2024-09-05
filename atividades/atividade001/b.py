@@ -17,7 +17,6 @@ class Calculos:
     
 # Limpando a tela
 os.system('cls')
-
 print('*'*70)
 print('CÁLCULO DE IDADE')
 print('*'*70)
@@ -26,12 +25,13 @@ print('*'*70)
 ano_atual = datetime.datetime.now().year
 ano_nascimento = int(input('Digite o ano de nascimento: '))
 
-
+# Instanciando o objeto Calculos
 calculo_idade = Calculos(ano_atual, ano_nascimento)
 
+# Invocando o método calcular idade
 idade = calculo_idade.calcular_idade()
 
-# Saída
+# Saída de dados
 print('-'*70)
 print(' RESULTADO ')
 print('-'*70)

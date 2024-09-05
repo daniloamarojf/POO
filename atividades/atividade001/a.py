@@ -38,9 +38,7 @@ calculos = Calculos(numero1, numero2, numero3)
 resultado_soma = calculos.somar()
 resultado_produto = calculos.multiplicar()
 
-
-
-print()   
+# Saída de dados  
 print('-'*70)
 print(' RESULTADOS ')
 print('-'*70)
