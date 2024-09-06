@@ -4,12 +4,15 @@ import os
 
 # Classe
 class Converter:
+    # Método Construtor
     def __init__(self, medida_metros):
         self.medida_metros = medida_metros
-        
+    
+    # Método converter para centímetros
     def converter_centimentros(self):
         return self.medida_metros * 100
     
+    # Método converter para milímetro
     def converter_milimetros(self):
         return self.medida_metros * 1000
     
@@ -26,7 +29,10 @@ print()
 medida_metros = float(input('Digite valor em metros: '))
 print()
 
+# Instanciando o objeto converter_centimetros_milimetros
 converter_centimetros_milimetros = Converter(medida_metros)
+
+# Invocando os métodos da classe Converter
 centimetros = converter_centimetros_milimetros.converter_centimentros()
 milimetros = converter_centimetros_milimetros.converter_milimetros()
 

@@ -3,10 +3,13 @@
 import os
 
 
+# Classe
 class Tabuada:
+    # Método construtor
     def __init__(self, numero):
         self.numero = numero
-        
+    
+    # Método para multiplicar
     def multiplicar(self):
         for c in range(1, 11): 
             print(f'{c} x {self.numero} = {c * self.numero}')
@@ -23,6 +26,7 @@ print()
 # Entrada de dados
 numero = int(input('Digite um numero: '))
 
+# Instanciando o objeto tabuada_multiplicaçao 
 tabuada_multiplicao = Tabuada(numero)
 
 # Saida de dados

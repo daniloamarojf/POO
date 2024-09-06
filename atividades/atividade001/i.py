@@ -2,11 +2,14 @@
 import os
 
 
+# Classe
 class Convercao:
+    # Método construtor
     def __init__(self, valor_real, dolar):
         self.valor_real = valor_real
         self.dolar = dolar
-        
+    
+    # Método para converter em dolar
     def para_dolar(self):
         return self.valor_real / self.dolar
         
@@ -24,6 +27,8 @@ dolar = float(input('Digite o valor atual do dolar: US$ '))
 
 # Criando uma instância da classe Conversão
 converter_dolar = Convercao(valor_real, dolar)
+
+# Chamando o método para_dolar
 converter = converter_dolar.para_dolar()
 
 # Saidas
