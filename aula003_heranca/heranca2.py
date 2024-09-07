@@ -2,10 +2,11 @@ import math
 import os
 
 
-class Trinagulo:
+class Triangulo:
     def __init__(self, cateto_1, cateto_2):
         self.cateto_1 = cateto_1
         self.cateto_2 = cateto_2
+        
         
 class TrianguloRetangulo(Triangulo):  # Herança
     def calcular_hipotenusa(self):
@@ -24,3 +25,9 @@ while True:
     else:
         triangulo_retangulo = TrianguloRetangulo(cateto_1, cateto_2)
         hipotenusa = triangulo_retangulo.calcular_hipotenusa()
+        
+        os.system('cls')
+        
+        print(f'O triangulo retângulo de lado 1 = {cateto_1} e')
+        print(f'de lado 2 = {cateto_2} é igual a {hipotenusa:.2f} aproximadamente')
+        print('Pressione Enter para continuar . . . ')
