@@ -12,12 +12,24 @@ class Numeros:
     
     # Método da classe para determinar intervalo numérico    
     def determinar_intervalo(self):
-        for var in range(self.numero_inicial, self.numero_final+1):
+        # sobrecarregar na classe filha
+        pass
+       
+# Classe filha
+class ImprimirIntervalo(Numeros):
+    # Heradar todos os atributos da classe pai podendo ter outros atributos
+    def __init__(self, numero_inicial, numero_final):
+        self.numero_inicial = numero_inicial
+        self.numero_final = numero_final
+    
+    # Herança da classe pai
+    def determinar_intervalo(self):
+        for var in range(self.numero_inicial, self.numero_final+1):  # 
             print(f'{var}', end=" | ")
-        return
-
+    
+             
 # Instanciando o objeto interalo
-intervalo = Numeros(1, 100)
+intervalo = ImprimirIntervalo(1, 100)
 
 # Saída de dados
 print('-'*70)

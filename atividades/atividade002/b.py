@@ -12,10 +12,18 @@ class Numeros:
     
     # Método da classe para determinar intervalo numérico
     def determinar_intervalo(self):
+        pass
+
+class ImprimirIntervalo(Numeros):
+    def __init__(self, numero_inicial, numero_final):
+        self.numero_inicial = numero_inicial
+        self.numero_final = numero_final
+        
+    def determinar_intervalo(self):
         for var in range(self.numero_inicial, self.numero_final+1):
             print(f'{var}', end=' | ')
         return 
-        
+           
 print('-'*70)
 print('IMPRESSÃO DE INTERVALO NUMÉRICO')
 print('-'*70)
@@ -23,7 +31,7 @@ numero_inicial = int(input('Número inicial: ')) # Entrada de dados
 numero_final = int(input('Número final: ')) # Entrada de dados
 
 # Instanciando o objeto intervalo
-intervalo = Numeros(numero_inicial, numero_final)
+intervalo = ImprimirIntervalo(numero_inicial, numero_final)
 
 # Saída de dados
 print('='*70)

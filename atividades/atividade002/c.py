@@ -13,13 +13,25 @@ class Numeros:
     
     # Método da classe par inverter ordem    
     def determinar_inverso(self):
+        pass
+    
+    
+class Imprimir(Numeros):
+    def __init__(self, numero_inicial, numero_final, ordem):
+        self.numero_inicial = numero_inicial
+        self.numero_final = numero_final
+        self.ordem = ordem
+        
+    def determinar_inverso(self):
         if self.ordem == -1: # Condição para extrutura de repetição varrer de forma inversa
             for var in range(self.numero_final, self.numero_inicial-1, -1):
                 print(f'{var}', end=' | ')
         return
+        
+    
 
 # Instanciando o objeto ordem inversa    
-ordem_inversa = Numeros(1, 10, -1)
+ordem_inversa = Imprimir(1, 10, -1)
 
 # Limpando a tela
 os.system('cls')
