@@ -18,14 +18,16 @@ class Imprimir(Numeros):
         self.numero_final = numero_final
         
     def determinar_primos(self):
-        contar = 0
         primos = []
-        for var in range(self.numero_inicial, self.numero_final):
-            for var in range(self.numero_inicial, self.numero_final):
-                contar = contar + 1
+        
+        for var in range(self.numero_inicial, self.numero_final + 1):
+            contar = 0
+            for var1 in range(self.numero_inicial + 1, self.numero_final + 1):
+                if var % var1 == 0:
+                    contar = contar + 1
                 
-        if contar == 2:
-            primos.append(var)
+            if contar == 2:
+                primos.append(var)
         return primos
 
 
@@ -41,5 +43,6 @@ print('-'*70)
 print('NÚMEROS PRIMOS ENTRE 0 E 100')
 print()
 print(f'{numeros_primos.determinar_primos()}')
+
 
 
