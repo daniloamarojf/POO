@@ -11,7 +11,7 @@ class Numeros:
         self.numero_final = numero_final
     
     # Método da classe para determinar intervalo numérico    
-    def determinar_intervalo(self):
+    def determinar_intervalo(self): # passar os atributos da classe numeros
         # sobrecarregar na classe filha
         pass
        
